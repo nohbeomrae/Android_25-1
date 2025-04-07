@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp"
+    >
+
+    <!-- android:orientation="horizontal" 은 가로 -->
+    <!-- android:orientation="vertical" 은 세로 -->
+
+
+    <TextView
+        android:id="@+id/screen_title_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="로그인"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <!-- android:hint -> 흐릿하게 표시되는 안내문  -->
+    <!-- match_parent -> 부모 크기만큼 채움 (가득채움)  -->
+    <!-- EditText -> 입력 필드를 만들기 위한 뷰(view)  -->
+
+        <EditText
+            android:id="@+id/beginner_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디"
+            android:layout_marginBottom="16dp"
+
+        />
+
+        <EditText
+            android:id="@+id/screen_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+        />
+
+
+        <Button
+            android:id="@+id/button_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:text="로그인"
+            android:textSize="12dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/button_login_google_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logo_google"
+            />
+
+        <ImageView
+            android:id="@+id/button_login_kakao_login"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logo_kakao"
+            />
+
+        <ImageView
+            android:id="@+id/screen_login_naver_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_logo_naver"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/button_findpassword_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찾기"
+            android:layout_marginEnd="5dp"
+            />
+
+        <TextView
+            android:id="@+id/button_joinmembership_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가입하기"
+            android:layout_gravity="center">
+
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
